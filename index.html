@@ -1,78 +1,221 @@
 <!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>SpaceX Platzi</title>
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
-    <link rel="icon" href="img/favicon.ico" type="image/x-icon" />
-    <link rel="stylesheet" href="/css/style.css" >
-</head>
-<body>
-    <header>
-        <h1 class="header">Platzinauta</h1>
-        <img class="header" src="img/platzi-logo.png" height="100px">
-        <img class="header" src="img/spacex-logo.png">
-        <div class="description">
-            <p>Like <a href="https://spacex.com" target="_blank">SpaceX</a> and <a href="https://platzi.com/" target="_blank">Platzi</a>? look launches info, for Platzinautas like you!</p>
-        </div>
-    </header>
-    <section>
-        <div class="container">
-            <div class="row">
-                <div class="col-sm-3"></div>
-                <div id="upcoming" class="card col-sm-3">
-                    <div id="upcoming-container">
-                        <h2>Next Launch</h2>
-                        <div id="title-upcoming-container">
-                            <h4 id="title-upcoming"></h4>
-                        </div>
-                        <div id="img-upcoming-container">
-                            <img id="img-upcoming" src="" width="60%" />
-                        </div>
-                        <div id="date-upcoming-container">
-                            <span><strong>When:</strong></span>
-                            <p id="date-upcoming"></p>
-                        </div>
-                        <div id="countdown-upcoming-container">
-                            <span><strong>Countdown for next launch:</strong></span>
-                            <p id="countdown-upcoming"></p>
-                        </div>
-                        <a href="" id="more-upcoming" class="btn btn-info">More info</a>
-                    </div>
-                </div>
+<html lang="es">
+    <head>
+        <meta charset="UTF-8">
+        <title>Portafolio RZ</title>
+        <!--Para ponerle un iconito a la pagina, en el title-->
+        <link rel="icon" type="image/svg" href="images/envelope.svg">
+        <!--Hojas estilos de google-->
+        <link href="https://fonts.googleapis.com/css2?family=Fjalla+One&family=Source+Sans+Pro&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="style.css">
+        
+    </head>
 
-                <div id="latest" class="card col-sm-3">
-                    <div id="title-latest-container">
-                        <h2>Last Launch</h2>
-                        <div id="title-latest-container">
-                            <h3 id="title-latest"></h3>
-                        </div>
-                        <div id="img-latest-container">
-                            <img id="img-latest" src="" width="60%" />
-                        </div>
-                        <div id="date-latest-container">
-                            <span><strong>When:</strong></span>
-                            <p id="date-latest"></p>
-                        </div>
-                        <a href="" id="more-latest" class="btn btn-info">More info</a>
-                    </div>
-                </div>
-                <div class="col-sm-3"></div>
-            </div>
+    <body>
+        <header class="header">
+            <div class="container">
+                <figure class="logo">
+                    
+                </figure>
+                
+                <nav class="menu">
+                    <ol>
+                        <li>
+                            <!--navegare en portafolio dentro de la misma pagina, imprtante id abajo-->
+                            <a class="link" href="#experiencia">Experiencia</a>
+                        </li>
 
-            <div class="row">
-                <div class="col-sm-3"></div>
-                <div id="past-launches" class="past-launches card col-sm-6">
-                    <h2>Past Launches</h2>
-                </div>
-                <div class="col-sm-3"></div>
+                        <li>
+                            <!--navegare en portafolio dentro de la misma pagina, imprtante id abajo-->
+                            <a class="link" href="#portafolio">Portafolio</a>
+                        </li>
+    
+                           
+                        <li>
+                            <a class="link" href="#contacto">Contacto</a>
+                        </li>
+                    </ol>
+                </nav>
             </div>
-        </div>
-    </section>
-    <footer>
-        <p>Developed by <a href="https://sb.js.org/">Santiago Bernal</a> - <a href="https://github.com/santiaguf/spacex-platzi" target="_blank">Code</a></p>
-    </footer>
-    <script type="text/javascript" src="js/launches.js"></script>
-</body>
+            
+        
+        </header>
+
+        <section class="hero">
+            <div class="container">
+                <h1>
+                    Hola soy <strong>Roddy Zamora Rodríguez Ingeniero en</strong><br/>Electrónica
+                    y Redes de Información de la <strong><br/>Escuela Politécnica Nacional</strong><br/> 
+                </h1>
+                <img class="hero-image" src="images/03Montaje.jpg" width="400" height="300" alt="imagen personal"> 
+        
+
+            </div>
+            
+        </section>
+
+        <section id="experiencia" class="portfolio">
+            <div class="container">
+                <h2>Experiencia laboral</h2>
+                <article class="project">
+                    <div class="project-details">
+    
+                        <h3 class="project-title">Clear Minds Consultores</h3>
+                        <h5 class="project-course">Quito - Ecuador</h5>
+                        <p class="project-date"> <small> <strong>Fecha Ingreso:</strong> 16/08/2021</small></p>
+                        <h4 class="project-title"> Quality Assurance (QA):</h4>
+                        <p class="project-description">Pruebas automatizadas usando <br/>
+                            Java Selenium & Cucumber
+                        <br/>
+                        <br/>
+                        Pruebas unitarias usando <br/>
+                        JUnit & Mockito
+                        </p>
+                    </div>
+    
+                    <figure class="project-imageContainer">
+                        <img class="project-image" src="images/clear-minds-logo.png" alt="clear-minds-logo" width="500">
+                    </figure>
+                </article>
+
+            </div>
+            
+        </section>
+
+        <section id="portafolio" class="portfolio">
+            <div class="container">
+                <h2>Portafolio (proyecto destacados)</h2>
+                <article class="project">
+                    <div class="project-details">
+    
+                        <h3 class="project-title">Sistema de reserva de computadoras y aulas</h3>
+                        <h6 class="project-course">Aplicación web</h6>
+                        <p class="project-date"> <small> <strong>Fecha:</strong> 06/06/2021</small></p>
+                        <p class="project-description">Aplicación web que permita reservar
+                            computadoras y aulas de manera online, permitiéndole a los usuarios conocer los
+                            horarios disponibles de cada aula del laboratorio.
+                        <br/>
+                        <br/>
+                        Esta aplicación fue realizada con: <br/>
+                        <ul>
+                            <li>Framework: Blazor Server</li>
+                            <li>Lenguaje de programación: C#</li>
+                            <li>Base de datos: SQL Server</li>
+                            <li>Bootstrap</li>
+                            <li>Libreria para el calendario: Synfuncion</li>
+                        </ul>
+                        </p>
+                    </div>
+    
+                    <figure class="project-imageContainer">
+                        <img class="project-image" src="images/ReservasBlazor.png" alt="Reservas" width="520">
+                    </figure>
+                </article>
+
+                <article class="project">
+                    <div class="project-details">
+    
+                        <h3 class="project-title">Pagina informativa, lugares turisticos Ecuador</h3>
+                        <h6 class="project-course">Aplicación web</h6>
+                        <p class="project-date"> <small> <strong>Fecha:</strong> 07/02/2021</small></p>
+                        <p class="project-url"> <small> <strong>Repositorio GitHub: </strong><a href="https://github.com/RoddyZ/LugaresTuristicosManabi.git" target="_blank">Turismo</a></small></p>
+                        <p class="project-description">Esta es una aplicación web que informa acerca de dos lugares turisticos del Ecuador
+                            <br/>
+                            <br/>
+                            Esta aplicación fue realizada con: <br/>
+                            <ul>
+                                <li>HTML</li>
+                                <li>Lenguaje de programación: JavaScript</li>
+                                <li>Bootstrap</li>
+                            </ul>
+                        </p>
+                    </div>
+    
+                    <figure class="project-imageContainer">
+                        <img class="project-image" src="images/Turismo.PNG" alt="Agenda" width="500">
+                    </figure>
+                </article>
+
+
+                <article class="project">
+                    <div class="project-details">
+    
+                        <h3 class="project-title">Inventario de una tienda</h3>
+                        <h6 class="project-course">Aplicación web</h6>
+                        <p class="project-date"> <small> <strong>Fecha:</strong> 22/11/2020</small></p>
+                        <p class="project-url"> <small> <strong>Repositorio GitHub: </strong><a href="https://github.com/RoddyZ/InventarioBlazorServer.git" target="_blank">Inventario</a></small></p>
+                        <p class="project-description">Esta es una aplicación web que emula un inventario de una tienda.
+                            <br/>
+                            <br/>
+                            Esta aplicación fue realizada con: <br/>
+                            <ul>
+                                <li>Framework: Blazor Server</li>
+                                <li>Lenguaje de programación: C#</li>
+                                <li>Paquete NuGet: Microsoft.EntityFrameworkCore.SqlServer</li>
+                                <li>Base de datos: SQL Server</li>
+                            </ul>
+                        </p>
+                    </div>
+    
+                    <figure class="project-imageContainer">
+                        <img class="project-image" src="images/Inventario.PNG" alt="Agenda" width="500">
+                    </figure>
+                </article>
+
+                
+
+                <article class="project">
+                    <div class="project-details">
+    
+                        <h3 class="project-title">Agenda de actividades</h3>
+                        <h6 class="project-course">Aplicación de escritorio Windows Forms</h6>
+                        <p class="project-date"> <small> <strong>Fecha:</strong> 07/08/2019</small></p>
+                        <p class="project-url"> <small> <strong>Repositorio GitHub: </strong><a href="https://github.com/RoddyZ/AgendaActividades.git" target="_blank">AgendaActividades</a></small></p>
+                        <p class="project-description">Esta es una aplicación de escritorio Windows Forms, la cual es una agenda de actividades. 
+                            En la administración de la Agenda se podrá ingresar una nueva actividad con sus respectivos datos.
+                            <br/>
+                            <br/>
+                            Esta aplicación fue realizada con: <br/>
+                            <ul>
+                                <li>Windows Forms</li>
+                                <li>Lenguaje de programación: C#</li>
+                                <li>Base de datos: SQL Server</li>
+                            </ul>
+                        </p>
+                    </div>
+    
+                    <figure class="project-imageContainer">
+                        <img class="project-image" src="images/AgendaActividades.PNG" alt="Agenda" width="500">
+                    </figure>
+                </article>
+
+
+                
+
+                
+
+            </div>
+            
+        </section>
+
+         
+        <section id="contacto" class="contact">
+            <div class="container">
+                <form action="/suscripcion/" class="form-email">
+                    <h3>Mi correo electrónico</h3>
+                    <!--Placehoder, mensaje de la entrada, datetime guarda el historial-->
+                    <a href="mailto:roddy.zr@hotmail.com" target="_blank" style="color: white;">roddy.zr@hotmail.com</a>                    
+                </form>
+                <div class="social">
+                    <a href="https://twitter.com/roddySZR?s=08" class="social-link twitter" target="_blank"></a>
+                    <a href="https://www.linkedin.com/in/roddy-steeven-zamora-rodr%C3%ADguez-58a116167/" class="social-link linkedin" target="_blank"></a>
+                    <a href="https://www.instagram.com/roddyzr/?utm_medium=copy_link" class="social-link instagram" target="_blank"></a>
+                    <a href="https://github.com/RoddyZ" class="social-link github" target="_blank"></a>
+                </div>
+            </div>
+            
+        </section>
+
+        
+    </body>
 </html>
