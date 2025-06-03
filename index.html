@@ -1,264 +1,92 @@
 <!DOCTYPE html>
 <html lang="es">
-    <head>
-        <meta charset="UTF-8">
-        <title>Portafolio RZ</title>
-        <!--Para ponerle un iconito a la pagina, en el title-->
-        <link rel="icon" type="image/svg" href="images/envelope.svg">
-        <!--Hojas estilos de google-->
-        <link href="https://fonts.googleapis.com/css2?family=Fjalla+One&family=Source+Sans+Pro&display=swap" rel="stylesheet">
-        <link rel="stylesheet" href="style.css">
-        
-    </head>
 
-    <body>
-        <header class="header">
-            <div class="container">
-                <figure class="logo">
-                    
-                </figure>
-                
-                <nav class="menu">
-                    <ol>
-                        <li>
-                            <!--navegare en portafolio dentro de la misma pagina, imprtante id abajo-->
-                            <a class="link" href="#experiencia">Experiencia</a>
-                        </li>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!--Para ponerle un iconito a la pagina, en el title-->
+    <link rel="icon" type="image/svg" href="images/envelope.svg">
+    <title>Roddy Zamora Rodriguez - ML Engineer</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
 
-                        <li>
-                            <!--navegare en portafolio dentro de la misma pagina, imprtante id abajo-->
-                            <a class="link" href="#portafolio">Portafolio</a>
-                        </li>
-    
-                           
-                        <li>
-                            <a class="link" href="#contacto">Contacto</a>
-                        </li>
-                    </ol>
-                </nav>
+<body>
+    <header>
+        <h1>Roddy Zamora Rodriguez</h1>
+        <p>Machine Learning Engineer</p>
+        <img class="hero-image" src="images/03Montaje.jpg" width="400" height="300" alt="imagen personal">
+
+    </header>
+
+    <section class="projects">
+        <div class="project">
+            <img src="images/proyecto1.PNG" alt="Proyecto 1">
+            <div class="info">
+                <h2>Computer Vision para trailers de supermercado</h2>
+                <p>I led a team in the development of a Computer Vision project for detecting objects and empty spaces
+                    in supermarket trailers, using YOLOv8 for object detection. The system includes a graphical
+                    interface built with Streamlit, which allows users to upload images, processes them through FastAPI
+                    and Redis, and returns real-time insights for optimizing space utilization.</p>
             </div>
-            
-        
-        </header>
+        </div>
 
-        <section class="hero">
-            <div class="container">
-                <h1>
-                    Hola, soy <strong>Roddy Zamora Rodríguez Ingeniero en</strong><br/>Electrónica
-                    y Redes de Información de la <strong><br/>Escuela Politécnica Nacional</strong><br/> 
-                </h1>
-                <img class="hero-image" src="images/03Montaje.jpg" width="400" height="300" alt="imagen personal"> 
-        
-
+        <div class="project">
+            <img src="images/proyecto2.PNG" alt="Proyecto 2">
+            <div class="info">
+                <h2>Diagnóstico de enfermedades en plantas</h2>
+                <p>Building a system for plant disease diagnosis and species classification using PlantCV and deep
+                    learning 🌿 I used PlantCV and OpenCV for preprocessing, and trained several CNN models, where
+                    EfficientNet stood out for its great accuracy and speed. The project includes a Streamlit interface,
+                    a FastAPI backend, and Redis to manage tasks efficiently. 🚀</p>
             </div>
-            
-        </section>
+        </div>
 
-        <section id="experiencia" class="portfolio">
-            <div class="container">
-                <h2>Experiencia laboral</h2>
-
-                <article class="project">
-                    <div class="project-details">
-    
-                        <h3 class="project-title">COBIS TOPAZ</h3>
-                        <h5 class="project-course">Quito - Ecuador</h5>
-                        <p class="project-date"> <small>11/07/2022</small></p>
-                        <h4 class="project-title"> Development Engineer 1: </h4>
-                        <p class="project-description">
-                        MySql, SQLServer
-                        <br/>
-                        <br/>
-                        Java
-                        <br/>
-                        <br/>
-                        AWS Step Functions, AWS Cloud Watch,<br/>
-                        AWS EventBridge, AWS S3
-                        <br/>
-                        <br/>
-                        Gherkin & Selenium 
-                        <br/>
-                        <br/>
-                        JUnit, Mockito & Docker
-                        <br/>
-                        <br/>
-                        Jmetter, SOAP & POSTMAN
-                        <br/>
-                        <br/>
-                        Scrum, Azure Boards, Git, Azure Repos
-                        </p>
-                    </div>
-    
-                    <figure class="project-imageContainer">
-                        <img class="project-image" src="images/Home-COBIS-TOPAZ-1.webp" alt="cobis-logo" width="500">
-                    </figure>
-                </article>
-
-                <article class="project">
-                    <div class="project-details">
-    
-                        <h3 class="project-title">CLEAR MINDS CONSULTORES</h3>
-                        <h5 class="project-course">Quito - Ecuador</h5>
-                        <p class="project-date"> <small>16/08/2021 - 10/07/2022</small></p>
-                        <h4 class="project-title"> Software Developer: </h4>
-                        <p class="project-description">Pruebas automatizadas usando <br/>
-                            Java Selenium & Cucumber
-                        <br/>
-                        <br/>
-                        Pruebas unitarias usando <br/>
-                        JUnit, Mockito & Docker
-                        <br/>
-                        <br/>
-                        Pruebas de carga usando <br/>
-                        Jmetter, SOAP & POSTMAN
-                        <br/>
-                        <br/>
-                        Creación de reportes con Jaspers
-                        </p>
-                    </div>
-    
-                    <figure class="project-imageContainer">
-                        <img class="project-image" src="images/clear-minds-logo.png" alt="clear-minds-logo" width="500">
-                    </figure>
-                </article>
-
+        <div class="project">
+            <img src="images/proyecto3.jpg" alt="Proyecto 3">
+            <div class="info">
+                <h2>Análisis de Sentimientos en Reseñas de Películas</h2>
+                <p>Built a sentiment analysis pipeline for movie reviews using NLP techniques. Applied custom text
+                    normalization, tokenization with ToktokTokenizer, and generated Word2Vec embeddings with Gensim.
+                    Developed a binary classifier to predict sentiment, and evaluated performance with custom metrics.
+                </p>
             </div>
-            
-        </section>
+        </div>
 
-        <section id="portafolio" class="portfolio">
-            <div class="container">
-                <h2>Portafolio (proyecto destacados)</h2>
-                <article class="project">
-                    <div class="project-details">
-    
-                        <h3 class="project-title">Sistema de reserva de computadoras y aulas</h3>
-                        <h6 class="project-course">Aplicación web</h6>
-                        <p class="project-date"> <small> <strong>Fecha:</strong> 06/06/2021</small></p>
-                        <p class="project-description">Aplicación web que permita reservar
-                            computadoras y aulas de manera online, permitiéndole a los usuarios conocer los
-                            horarios disponibles de cada aula del laboratorio.
-                        <br/>
-                        <br/>
-                        Esta aplicación fue realizada con: <br/>
-                        <ul>
-                            <li>Framework: Blazor Server</li>
-                            <li>Lenguaje de programación: C#</li>
-                            <li>Base de datos: SQL Server</li>
-                            <li>Bootstrap</li>
-                            <li>Libreria para el calendario: Synfuncion</li>
-                        </ul>
-                        </p>
-                    </div>
-    
-                    <figure class="project-imageContainer">
-                        <img class="project-image" src="images/ReservasBlazor.png" alt="Reservas" width="520">
-                    </figure>
-                </article>
-
-                <article class="project">
-                    <div class="project-details">
-    
-                        <h3 class="project-title">Pagina informativa, lugares turisticos Ecuador</h3>
-                        <h6 class="project-course">Aplicación web</h6>
-                        <p class="project-date"> <small> <strong>Fecha:</strong> 07/02/2021</small></p>
-                        <p class="project-url"> <small> <strong>Repositorio GitHub: </strong><a href="https://github.com/RoddyZ/LugaresTuristicosManabi.git" target="_blank">Turismo</a></small></p>
-                        <p class="project-description">Esta es una aplicación web que informa acerca de dos lugares turisticos del Ecuador
-                            <br/>
-                            <br/>
-                            Esta aplicación fue realizada con: <br/>
-                            <ul>
-                                <li>HTML</li>
-                                <li>Lenguaje de programación: JavaScript</li>
-                                <li>Bootstrap</li>
-                            </ul>
-                        </p>
-                    </div>
-    
-                    <figure class="project-imageContainer">
-                        <img class="project-image" src="images/Turismo.PNG" alt="Agenda" width="500">
-                    </figure>
-                </article>
-
-
-                <article class="project">
-                    <div class="project-details">
-    
-                        <h3 class="project-title">Inventario de una tienda</h3>
-                        <h6 class="project-course">Aplicación web</h6>
-                        <p class="project-date"> <small> <strong>Fecha:</strong> 22/11/2020</small></p>
-                        <p class="project-url"> <small> <strong>Repositorio GitHub: </strong><a href="https://github.com/RoddyZ/InventarioBlazorServer.git" target="_blank">Inventario</a></small></p>
-                        <p class="project-description">Esta es una aplicación web que emula un inventario de una tienda.
-                            <br/>
-                            <br/>
-                            Esta aplicación fue realizada con: <br/>
-                            <ul>
-                                <li>Framework: Blazor Server</li>
-                                <li>Lenguaje de programación: C#</li>
-                                <li>Paquete NuGet: Microsoft.EntityFrameworkCore.SqlServer</li>
-                                <li>Base de datos: SQL Server</li>
-                            </ul>
-                        </p>
-                    </div>
-    
-                    <figure class="project-imageContainer">
-                        <img class="project-image" src="images/Inventario.PNG" alt="Agenda" width="500">
-                    </figure>
-                </article>
-
-                
-
-                <article class="project">
-                    <div class="project-details">
-    
-                        <h3 class="project-title">Agenda de actividades</h3>
-                        <h6 class="project-course">Aplicación de escritorio Windows Forms</h6>
-                        <p class="project-date"> <small> <strong>Fecha:</strong> 07/08/2019</small></p>
-                        <p class="project-url"> <small> <strong>Repositorio GitHub: </strong><a href="https://github.com/RoddyZ/AgendaActividades.git" target="_blank">AgendaActividades</a></small></p>
-                        <p class="project-description">Esta es una aplicación de escritorio Windows Forms, la cual es una agenda de actividades. 
-                            En la administración de la Agenda se podrá ingresar una nueva actividad con sus respectivos datos.
-                            <br/>
-                            <br/>
-                            Esta aplicación fue realizada con: <br/>
-                            <ul>
-                                <li>Windows Forms</li>
-                                <li>Lenguaje de programación: C#</li>
-                                <li>Base de datos: SQL Server</li>
-                            </ul>
-                        </p>
-                    </div>
-    
-                    <figure class="project-imageContainer">
-                        <img class="project-image" src="images/AgendaActividades.PNG" alt="Agenda" width="500">
-                    </figure>
-                </article>
-
-
-                
-
-                
-
+        <div class="project">
+            <img src="images/proyecto4.jpg" alt="Proyecto 4">
+            <div class="info">
+                <h2>Predicción de casos de Dengue - DrivenData</h2>
+                <p>Participated in the DengAI competition hosted by DrivenData. The challenge focused on predicting the
+                    number of dengue cases using atmospheric and temperature data, pushing the boundaries of data-driven
+                    decision-making in public health.</p>
             </div>
-            
-        </section>
+        </div>
 
-         
-        <section id="contacto" class="contact">
-            <div class="container">
-                <form action="/suscripcion/" class="form-email">
-                    <h3>Mi correo electrónico</h3>
-                    <!--Placehoder, mensaje de la entrada, datetime guarda el historial-->
-                    <a href="mailto:roddy.zr@hotmail.com" target="_blank" style="color: white;">roddy.zr@hotmail.com</a>                    
-                </form>
-                <div class="social">
-                    <a href="https://www.linkedin.com/in/roddy-steeven-zamora-rodr%C3%ADguez-58a116167/" class="social-link linkedin" target="_blank"></a>
-                    <a href="https://www.instagram.com/roddyzr/?utm_medium=copy_link" class="social-link instagram" target="_blank"></a>
-                    <a href="https://github.com/RoddyZ" class="social-link github" target="_blank"></a>
-                </div>
+        <div class="project">
+            <img src="images/proyecto5.PNG" alt="Proyecto 5">
+            <div class="info">
+                <h2>Clasificación de vehículos con CNN</h2>
+                <p>Implemented an end-to-end car classification solution using Convolutional Neural Networks (CNNs) with
+                    TensorFlow, allowing accurate categorization of vehicle types based on images.</p>
             </div>
-            
-        </section>
+        </div>
+    </section>
 
-        
-    </body>
+    <section id="contacto" class="contact">
+        <div class="container">
+            <form action="/suscripcion/" class="form-email">
+                <h3>Mi correo electrónico</h3>
+                <a href="mailto:roddy.zr@hotmail.com" target="_blank" style="color: white;">roddy.zr@hotmail.com</a>
+            </form>
+            <div class="social">
+                <a href="https://www.linkedin.com/in/roddy-steeven-zamora-rodr%C3%ADguez-58a116167/"
+                    class="social-link linkedin" target="_blank"></a>
+                <a href="https://www.instagram.com/roddyzr/?utm_medium=copy_link" class="social-link instagram"
+                    target="_blank"></a>
+                <a href="https://github.com/RoddyZ" class="social-link github" target="_blank"></a>
+            </div>
+        </div>
+    </section>
+</body>
+
 </html>

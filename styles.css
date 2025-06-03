@@ -1,0 +1,137 @@
+/* styles.css */
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    background-color: #121212;
+    color: #ffffff;
+    line-height: 1.6;
+}
+
+header {
+    text-align: center;
+    background-color: #1e1e1e;
+    padding: 2rem;
+}
+
+header h1 {
+    margin: 0;
+    font-size: 2.5rem;
+}
+
+header p {
+    font-size: 1.2rem;
+    color: #bbbbbb;
+}
+
+.projects {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    padding: 2rem;
+}
+
+.project {
+    display: flex;
+    flex-direction: column;
+    background-color: #1f1f1f;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 0 10px rgba(255, 255, 255, 0.05);
+}
+
+.project img {
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
+.project .info {
+    padding: 1rem;
+}
+
+.project h2 {
+    margin-top: 0;
+    color: #00bcd4;
+}
+
+.skills {
+    background-color: #1e1e1e;
+    padding: 2rem;
+    margin: 2rem;
+    border-radius: 10px;
+}
+
+.skills h2 {
+    margin-bottom: 1rem;
+    color: #00bcd4;
+}
+
+.skills ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.skills li {
+    padding: 0.5rem 0;
+    border-bottom: 1px solid #333;
+}
+
+.skills strong {
+    color: #ffffff;
+}
+
+.contact {
+    background-color: #000000;
+    padding: 2rem;
+    text-align: center;
+}
+
+.contact h3 {
+    color: #00bcd4;
+}
+
+.contact a {
+    text-decoration: none;
+    color: #00bcd4;
+}
+
+.social {
+    margin-top: 1rem;
+}
+
+.social-link {
+    display: inline-block;
+    width: 40px;
+    height: 40px;
+    margin: 0 10px;
+    background-size: cover;
+}
+
+.social-link.linkedin {
+    background-image: url('images/signo-de-linkedin.svg');
+    filter: invert(1);
+}
+
+.social-link.instagram {
+    background-image: url('images/instagram.svg');
+}
+
+.social-link.github {
+    background-image: url('images/github.svg');
+}
+
+/* Responsive */
+@media (min-width: 768px) {
+    .project {
+        flex-direction: row;
+    }
+
+    .project img {
+        width: 40%;
+    }
+
+    .project .info {
+        width: 60%;
+    }
+}
